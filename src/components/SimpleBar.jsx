@@ -1,27 +1,19 @@
 import { ResponsiveBar } from '@nivo/bar';
 
 const data = [
-  {
-    key1: 9512.0976,
-    key2: 4000.0032,
-    key3: 3.4515,
-    key4: 107.1447,
-    key5: 4000.0032,
-    key6: 0,
-    key7: 0,
-    key8: 321.4296,
-    time: '2019-04',
-  },
+  { quarter: 1, earnings: 13000 },
+  { quarter: 2, earnings: 16500 },
+  { quarter: 3, earnings: 14250 },
+  { quarter: 4, earnings: 19000 },
 ];
 
 const SimpleBar = () => {
   return (
     <ResponsiveBar
-      indexBy="time"
-      groupMode="grouped"
       data={data}
-      keys={['key1', 'key2', 'key3', 'key4', 'key5', 'key6', 'key7', 'key8']}
-      indexBy="time"
+      groupMode="grouped"
+      keys={['earnings']}
+      indexBy="quarter"
       margin={{
         top: 50,
         right: 130,
