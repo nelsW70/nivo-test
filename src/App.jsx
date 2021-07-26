@@ -1,5 +1,6 @@
 import './App.css';
 import Bar from './components/Bar';
+import SimpleBar from './components/SimpleBar';
 import Line from './components/Line';
 
 function App() {
@@ -7,6 +8,12 @@ function App() {
     <>
       <h1>nivo charts basic</h1>
       <div className="layout">
+        <div className="container">
+          <h2>simple bar</h2>
+          <div className="container__chart">
+            <SimpleBar />
+          </div>
+        </div>
         <div className="container">
           <h2>stacked vertical</h2>
           <div className="container__chart">
